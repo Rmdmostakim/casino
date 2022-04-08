@@ -1,0 +1,42 @@
+.installer-container{
+    min-height: 40vh;
+    position: absolute; 
+    transform: translate(0, 50%);
+}
+.requirement-container{
+    min-height: 102vh;
+    position: absolute; 
+    transform: translate(0, 5%);
+}
+.env-container{
+    min-height: 80vh;
+    position: absolute; 
+    transform: translate(0, 20%);
+    text-align: start !important;
+}
+.db-container{
+    min-height: 50vh;
+    position: absolute; 
+    transform: translate(0, 50%);
+}
+.hr-line{
+    position: relative;
+    border-bottom: 2px solid gray;
+    top: 4.8rem;
+}
+.installer-menu{
+    display: inline-flexbox;
+    position: relative;
+    top: 4rem;
+}
+.installer-menu span{
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 48%;
+}
+.card-body{
+    position: relative;
+    top: 2rem;
+}
+.db-container a{
+    text-decoration: none;
+}

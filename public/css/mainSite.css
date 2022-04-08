@@ -1,0 +1,257 @@
+/*default user profile*/
+.default-profile{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.top-10{
+    margin-top: 10%;
+}
+.homeBody{
+    background-image:url('../icon/homebg.jpg');
+    min-height:770px;
+}
+.card-img-width{
+    min-height: 200px;
+    max-height: 200px;
+}
+.footer-bg{
+    background-image:url('../icon/fbg.jpg');
+    min-height: 200px;
+}
+.f-sofia{
+    font-family: 'Sofia';font-size: 22px;
+}
+
+.gameBox{
+    background-color: #ffffff;
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+.stats{
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+}
+.coin{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+.coin img{
+    width: 145px;
+}
+.heads,.tails{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.tails{
+    transform: rotateX(180deg);
+}
+@keyframes spin-tails{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes spin-heads{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 120px;
+    padding: 10px 0;
+    border: 2.5px solid #424ae0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#flip-button{
+    background-color: #424ae0;
+    color: #ffffff;
+}
+#flip-button:disabled{
+    background-color: #e1e0ee;
+    border-color: #e1e0ee;
+    color: #101020;
+}
+#reset-button{
+    background-color: #ffffff;
+    color: #424ae0;
+}
+/*login page*/.my-login-page {
+	background-color: #f7f9fb;
+	font-size: 14px;
+}
+
+.my-login-page .brand {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 40px auto;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	position: relative;
+	z-index: 1;
+}
+
+.my-login-page .brand img {
+	width: 100%;
+}
+
+.my-login-page .card-wrapper {
+	width: 400px;
+}
+
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+/*winner msg*/
+.winener-msg{
+    width: 100%;
+    position: absolute;
+}
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #FF0000;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #FF0000;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #09ff00;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #4c00ff;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+.spin-arrow{
+    margin-left: 40%;
+    font-size: 25px;
+    color: red;
+}
+
+@media screen and (max-width: 700px) {
+    .gameBox{
+        top: 50%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .gameBox{
+        top: 56%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .gameBox{
+        top: 67%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .gameBox{
+        top: 67%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .gameBox{
+        top: 50%;
+    }
+}
